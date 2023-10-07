@@ -17,11 +17,8 @@ https://github.com/Duiccni
 * type1-2-3_inst	(Line 400-430)
 * push-pop-segments	(Line 442)
 
-## Variables:
-* $, $$, (<n1> (+ | -) <n2>...),
-* 0x<hex>, <decimal>, 0b<bin>, &<name>, '<char>'
 ### Variables that removed in v1.0.1:
-* $<const>, ?
+* $const, ?
 ### Code from v0.0.1-beta:
 * process(v, s, n): zeroExtend(toHex(v, s), s, n)
 * memProc(v, s): reverse(splitBytes(process(v, s, False)))
