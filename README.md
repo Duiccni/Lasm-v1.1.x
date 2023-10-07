@@ -27,12 +27,16 @@ https://github.com/Duiccni
 * memProc(v, s): reverse(splitBytes(process(v, s, False)))
 
 ### Example command:
-* python3 main.py -s release -f 0 -ver 111 -of 1 -i test.lasm -o test
-* python3 main.py -help
-* python3 main.py -version
+```
+python3 main.py -s release -f 0 -ver 111 -of 1 -i test.lasm -o test
+python3 main.py -help
+python3 main.py -version
+```
 
 ### Close all verboses for less anoying and more readable output.
-* python3 main.py -s release -f 0 -ver 000 -of 1 -i test.lasm -o test
+```
+python3 main.py -s release -f 0 -ver 000 -of 1 -i test.lasm -o test
+```
 ### But in case you want to learn how code works open it.
 
 Note: I used Black Formatter for making code more Prettier
