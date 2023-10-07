@@ -1,0 +1,99 @@
+org 0x1009
+shl .dword *&num1, 1
+shl *&num1
+shl *&num1, 0
+shl .word *&num1, 10
+shl *&num1, cl
+
+ror eax, cl
+ror eax, 0x10
+ror ax, 0
+ror ax
+
+lods .byte
+lods .word
+lods .dword
+nop
+mov ss, ax
+nop
+mov *&num1, &num2
+mov *0x4321, &num2
+mov *&num1, 0x4321
+nop
+con num1, 0xee
+con num2, 0xff
+jmp .far 0
+jz .far (&abc1+$)
+con abc1, 0x10
+or *0xCC, 0xCC
+def 0xAA
+times (0x70-$+$$), 'def 0'
+add *(&num1), (&num2)
+def 0xAA
+adc *(0xff-&num1), (&num2+0xe)
+
+def .dword 0
+// def :4 0 (Should be added????)
+
+def .word 0x1234
+def .word 0x1234, 0x5678
+def .word 0x1234, 0x5678, 0x9abc
+def "Hello, world!", 0x0a
+def "Hello, world!", 0x0a, 0x00
+cmp *0x21302, 0x1
+test ax, 0x1000
+test ax, cx
+// New commands
+push ax
+push bx
+push cx
+push dx
+pop ax
+pop bx
+pop cx
+pop dx
+call .near 0x100
+call .far 0x1000
+ret
+sret
+inc ax
+inc bx
+inc cx
+inc dx
+dec ax
+dec bx
+dec cx
+dec dx
+xor ax, bx
+xor bx, cx
+xor cx, dx
+xor dx, ax
+or ax, bx
+or bx, cx
+or cx, dx
+or dx, ax
+and ax, bx
+and bx, cx
+and cx, dx
+and dx, ax
+nop
+hlt
+cmc
+clc
+stc
+cli
+sti
+cld
+std
+int 0x10
+int 0x11
+pusha
+popa
+pushad
+int3
+fret
+int0
+int1
+syscall
+stosb
+lodsw
