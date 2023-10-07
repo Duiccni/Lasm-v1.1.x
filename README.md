@@ -7,7 +7,7 @@ Its supports basic x86 instructions and some advanced commands.
 https://github.com/Duiccni
 
 ### Dont Sure to Add:
-* 'def :<const>(size) <const>(value)'
+* 'def :const(size) const(value)'
 
 ## variables.py:
 * Sizes				(Line 68)
