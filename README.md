@@ -1,6 +1,6 @@
 # LASM v1.1.2
-* Searching for Tester.
 Lime Assembler
+### Searching for Tester.
 This is a simple **32-bit x86 Assembler** language written in **Python 3.11.5**.
 Its supports basic x86 instructions and some advanced commands.
 Its also has a lot of features that make it easy to use, such as:
